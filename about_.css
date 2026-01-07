@@ -1,0 +1,1003 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libertinus Serif Display', serif;
+}
+
+body{
+    min-height: 100vh;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(18, 21, 174);
+}
+main{
+    
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 689px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridly{
+    background-color: black;
+    height: 450px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.photo{
+    margin: 50px;
+    margin-top: 120px;
+    
+}
+.div4{
+    background-color: black;
+    color: white;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 400px;
+    
+
+}
+.heading{
+    display: flex;
+}
+h3{
+    font-size: 100px;
+}
+#hea1{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.box4{
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 200px;
+    width: 600px;
+}
+
+.info{
+    margin: 50px;
+    width: 700px;
+    margin-top: 120px;
+}
+#sir{
+   border-radius: 100px;
+   height: 200px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+h2{
+    margin-bottom: 20px;
+}
+#p1{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h3{
+    color: white;
+    font-size: 25px;
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin: 7px;
+    padding: 6px 10px;
+}
+
+.nav_item a:hover{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+}
+.copyright{
+    background-color: black ;
+    bottom: 0px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-column-gap: 90px;
+}
+.quick, .resourse, .social{
+    margin: 150px 100px 50px 100px;
+}
+
+#links{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#resou{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#soci{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#a1,#ql{
+    color: antiquewhite;
+    margin-left: 30px;
+    font-size: 15px;
+}
+#a1,#ql1{
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+#social_1{
+    height: 40px;
+    margin: 5px;
+    
+}
+#copy{
+    background-color: rgb(201, 164, 164);
+    width: 1300px;
+    border-color: rgb(184, 177, 177);
+    height: 2px;
+    margin-left: 110px;
+    margin-bottom: 100px;
+}
+#copy_right{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#a1:hover{
+    color: yellow;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    width: 28px;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 800px) {
+    .nav_item {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(18, 21, 174);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav_item a {
+        font-size: 18px;
+        padding: 15px;
+        display: block;
+    }
+
+    .nav_item.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .box {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+}
+@media (max-width:320px)
+{  
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    max-width: 100%;
+    margin-top: 40px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .info{
+        height:100px;
+        text-align: center;
+        margin-top: 190px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    #gr1{
+        font-size: 8px;
+    }
+    #sir{
+        margin-left:20px;
+        max-width: 100%;
+        display: block;
+        margin-top: 250px;
+        height: 100px;
+        
+    }
+    .gridly{
+       display: grid;
+       grid-template-rows: 50px 50px;
+       height: 350px;
+       width: 320px;
+    }
+    .div4{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      height: max-content;
+    }
+    h3{
+        font-size: 50px;
+        margin-left: 30px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hea1{
+           margin-top: 20px;
+           text-align: center;
+           margin-left: 10px;
+           
+    }
+    #hea2{
+        font-size: 10px;
+        margin-left: px;
+        text-align: center;
+    }
+    .box4{
+        height: 100px;
+        width: 250px;
+        margin-left:25px;
+        text-align: center;
+        
+    }
+    .copyright{
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .quick,.resourse,.social{
+        margin-left: 10px;
+    }
+    #links,#resou,#soci{
+        font-size: 20px;
+        
+    }
+    .resourse,.social{
+        margin-top: 10px;
+    }
+    #copy{
+        margin-left: 10px;
+        width: 90%;
+        margin-right: 10px;
+    }
+    #social_1{
+        height: 20px;
+    }
+    #copy_right{
+        margin-top: 20px;
+    }
+}
+@media (min-width:330px) and (max-width:400px)
+{  
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .info{
+        height:100px;
+        text-align: center;
+        margin-top: 190px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    #gr1{
+        font-size: 8px;
+    }
+    #sir{
+        margin-left:20px;
+        max-width: 100%;
+        display: block;
+        margin-top: 250px;
+        height: 100px;
+        
+    }
+    .gridly{
+       display: grid;
+       grid-template-rows: 50px 50px;
+       height: 350px;
+       width: 100%px;
+    }
+    .div4{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      height: max-content;
+      
+    }
+    h3{
+        font-size: 60px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hea1{
+           margin-top: 25px;
+           text-align: center;
+    }
+    #hea2{
+        font-size: 10px;
+        margin-left: 3;
+        text-align: center;
+    }
+    .box4{
+        height: 100px;
+        width: 250px;
+        margin-left: 60px;
+        text-align: center;
+
+        
+    }
+    .copyright{
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .quick,.resourse,.social{
+        margin-left: 10px;
+    }
+    #links,#resou,#soci{
+        font-size: 20px;
+        
+    }
+    .resourse,.social{
+        margin-top: 10px;
+    }
+    #copy{
+        margin-left: 10px;
+        width: 90%;
+        margin-right: 10px;
+    }
+    #social_1{
+        height: 20px;
+    }
+    #copy_right{
+        margin-top: 20px;
+    }
+}
+@media (min-width:410px) and (max-width:430px)
+{  
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .info{
+        height:100px;
+        text-align: center;
+        margin-top: 0px;
+        width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #gr1{
+        font-size: 8px;
+    }
+    #sir{
+        margin-left:-17px;
+        width: 100px;
+        display: block;
+        margin-top: 25px;
+        height: 100px;
+        
+        
+        
+    }
+    .gridly{
+       display: grid;
+       grid-template-columns: 150px 150px;
+       height: 350px;
+       width: 100%px;
+       
+    }
+    .div4{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      height: max-content;
+      
+    }
+    h3{
+        font-size: 60px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hea1{
+           margin-top: 25px;
+           text-align: center;
+    }
+    #hea2{
+        font-size: 10px;
+        margin-left: x;
+        text-align: center;
+    }
+    .box4{
+        height: 100px;
+        width: 250px;
+        margin-left: 70px;
+        text-align: center;
+
+        
+    }
+    .copyright{
+        height: max-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .quick,.resourse,.social{
+        margin-left: 10px;
+    }
+    #links,#resou,#soci{
+        font-size: 20px;
+        
+    }
+    .resourse,.social{
+        margin-top: 10px;
+    }
+    #copy{
+        margin-left: 10px;
+        width: 90%;
+        margin-right: 10px;
+    }
+    #social_1{
+        height: 20px;
+    }
+    #copy_right{
+        margin-top: 20px;
+    }
+}
+@media (min-width:440px) and (max-width:768px)
+{  
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    .info{
+        height:100px;
+        text-align: center;
+        margin-top: 0px;
+        width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #gr1{
+        font-size: 8px;
+    }
+    #sir{
+        margin-left:-17px;
+        width: 100px;
+        display: block;
+        margin-top: 25px;
+        height: 100px;
+    }
+    .gridly{
+       display: grid;
+       grid-template-columns: 150px 150px;
+       
+       height: 350px;
+       width: 100%px;
+       
+    }
+    .div4{
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-column-gap: 300px;
+      grid-row-gap: 60px;
+      height: max-content;
+      
+    }
+    h3{
+        font-size: 60px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hea1{
+           margin-top: 25px;
+           text-align: center;
+    }
+    #hea2{
+        font-size: 10px;
+        margin-left: x;
+        text-align: center;
+    }
+    .box4{
+        height: 100px;
+        width: 250px;
+        margin-left: 50px;
+        text-align: center;
+    }
+   .copyright{
+    background-color: black ;
+    bottom: 0px;
+    height:max-content;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 35px;
+    }
+    #copy{
+    background-color: rgb(201, 164, 164);
+    width: 550px;
+    border-color: rgb(184, 177, 177);
+    height: 2px;
+    margin-left: 110px;
+    margin-bottom: px;
+    }
+    .quick,.resourse,.social{
+        margin-left: 60px;
+    }
+    #links,#soci,#resou{
+        font-size: 20px;
+    }
+   #copy_right{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    
+    }
+    .social_icon{
+        display: flex;
+        
+    }
+    #social_1{
+        height: 30px;
+    }
+    .copy{
+        text-align: center;
+        height: max-content;
+        width: 100%;
+    }
+  
+
+}
+@media (min-width:800px) and (max-width:1240px)
+{  
+     body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+    .info{
+        height:200px;
+        text-align: center;
+        margin-top: 0px;
+        width: 400px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #gr1{
+        font-size: 10px;
+    }
+    #sir{
+        margin-left:-50px;
+        width: 150px;
+        display: block;
+        margin-top: -60px;
+        height: 150px;
+    }
+    .photo{
+        margin-left: 30px;
+    }
+    .gridly{
+       display: grid;
+       grid-template-columns: 150px 150px;
+       grid-column-gap: 400px;
+       height: 35 0px;
+       width: 100%px;
+       
+    }
+    .div4{
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-column-gap: 500px;
+      grid-row-gap: 160px;
+      height: 650px;
+      width: 100%;
+      margin-top: -1px;
+      
+    }
+    h3{
+        font-size: 60px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #hea1{
+           margin-top: 25px;
+           text-align: center;
+    }
+    #hea2{
+        font-size: 14px;
+        margin-left: x;
+        text-align: center;
+    }
+    .box4{
+        height: 150px;
+        width: 300px;
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 20px;
+       
+    }
+   .copyright{
+    background-color: black ;
+    bottom: 0px;
+    height:max-content;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: -5px;
+    }
+    #copy{
+    background-color: rgb(201, 164, 164);
+    width: 780px;
+    border-color: rgb(184, 177, 177);
+    height: 2px;
+    margin-left: 110px;
+    margin-bottom: px;
+    }
+    .quick,.resourse,.social{
+        margin-left: 60px;
+    }
+    #links,#soci,#resou{
+        font-size: 20px;
+    }
+   #copy_right{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    
+    }
+    .social_icon{
+        display: flex;
+        
+    }
+    #social_1{
+        height: 30px;
+    }
+    .copy{
+        text-align: center;
+        height: max-content;
+        width: 100%;
+    }
+  
+}
+@media (min-width:1260px) and (max-width:1440px)
+{  
+       body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main{
+     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    h1{
+        font-size: 30px;
+    }
+    #p1{
+     font-size: 8px;
+    }
+    h2{
+        margin-left: 10px;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+    .info{
+        height:200px;
+        text-align: center;
+        margin-top: 0px;
+        width: 600px;
+        margin-left: -110px;
+        margin-bottom: 20px;
+    }
+    #gr1{
+        font-size: 15px;
+    }
+    #sir{
+        margin-left:-50px;
+        width: 200px;
+        display: block;
+        margin-top: -30px;
+        height: 200px;
+    }
+    .photo{
+        margin-left: 200px;
+    }
+    .gridly{
+       display: grid;
+       grid-template-columns: 150px 150px;
+       grid-column-gap: 400px;
+       height: 35 0px;
+       width: 100%px;
+       
+    }
+    .div4{
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-column-gap: 700px;
+      grid-row-gap: 160px;
+      height: 900px;
+      width: 100%;
+      margin-top: -1px;
+      
+    }
+    h3{
+        font-size: 90px;
+    }
+    .heading{
+        margin-bottom: 5px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    #hea1{
+           margin-top: 45x;
+           text-align: center;
+    }
+    #hea2{
+        font-size: 20px;
+        margin-left: x;
+        text-align: center;
+    }
+    .box4{
+        height: 150px;
+        width: 500px;
+        margin-left: 50px;
+        text-align: center;
+        margin-top: 20px;
+       
+    }
+   .copyright{
+    background-color: black ;
+    bottom: 0px;
+    height:max-content;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 80px;
+    }
+    #copy{
+    background-color: rgb(201, 164, 164);
+    width: 1220px;
+    border-color: rgb(184, 177, 177);
+    height: 2px;
+    margin-left: 110px;
+    margin-bottom: px;
+    }
+    #a1{
+        font-size: 20px;
+    }
+    .quick,.resourse,.social{
+        margin-left: 60px;
+    }
+    #links,#soci,#resou{
+        font-size: 30px;
+    }
+   #copy_right{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    
+    }
+    .social_icon{
+        display: flex;
+        
+    }
+    #social_1{
+        height: 40px;
+    }
+    .copy{
+        text-align: center;
+        height: max-content;
+        width: 100%;
+    }
+}
